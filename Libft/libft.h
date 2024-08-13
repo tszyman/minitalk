@@ -6,7 +6,7 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 14:10:32 by tomek             #+#    #+#             */
-/*   Updated: 2024/08/12 22:27:37 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/13 22:50:30 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <strings.h>
 # include <stdarg.h>
 # include <signal.h>
+# include <stdint.h>
 
 typedef struct s_message
 {
@@ -60,5 +61,10 @@ void		ft_putnbr_fd(int n, int fd);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t		ft_strlcpy(char *dst, const char *src, size_t n);
 size_t		ft_strlcat(char *dst, const char *src, size_t n);
+int			ft_printf(const char *format, ...);
+int			ft_printchar(int c);
+int			ft_printstr(char *str);
+int			ft_printp(void *p);
+int			ft_printnbr(long n, int base, char *symbols);
 
 #endif
