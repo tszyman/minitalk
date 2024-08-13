@@ -6,11 +6,11 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 18:25:26 by tomek             #+#    #+#             */
-/*   Updated: 2024/05/08 19:31:28 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/13 23:02:48 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_printstr(char *str)
 {

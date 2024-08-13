@@ -6,20 +6,21 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 14:10:32 by tomek             #+#    #+#             */
-/*   Updated: 2024/08/13 22:50:30 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/13 22:59:10 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <stdio.h>
 # include <strings.h>
 # include <stdarg.h>
 # include <signal.h>
 # include <stdint.h>
+# include <stddef.h>
 
 typedef struct s_message
 {

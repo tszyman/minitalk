@@ -6,7 +6,7 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 22:15:58 by tomek             #+#    #+#             */
-/*   Updated: 2024/08/13 22:41:10 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/13 22:53:51 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ int	main(void)
 	pid_t	pid;
 	
 	pid = getpid();
-	ft_
+	ft_printf("Server's PID: %d\n", pid);
 	
 }

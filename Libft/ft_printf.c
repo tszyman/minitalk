@@ -6,11 +6,11 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 14:07:01 by tomek             #+#    #+#             */
-/*   Updated: 2024/05/09 21:56:06 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/13 23:02:31 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 static int	ft_option(va_list args, int c)
 {
