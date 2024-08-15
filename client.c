@@ -1,4 +1,4 @@
-	/* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   client.c                                           :+:      :+:    :+:   */
@@ -6,7 +6,7 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 22:28:07 by tomek             #+#    #+#             */
-/*   Updated: 2024/08/13 23:16:47 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/15 21:52:13 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	check_args(int argc, char **argv)
 {
 	int	i;
-	
+
 	if (argc != 3)
 	{
 		ft_printf("Error: run client only with 2 arguments\n");
@@ -24,7 +24,7 @@ void	check_args(int argc, char **argv)
 	i = 0;
 	while (argv[1][i])
 	{
-		if(!ft_isdigit(argv[1][i++]))
+		if (!ft_isdigit(argv[1][i++]))
 		{
 			ft_printf("Error: Invalid PID (non-numeric chars)\n");
 			exit(EXIT_FAILURE);
@@ -36,11 +36,12 @@ void	check_args(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 }
+
 void	snd_msg(pid_t pid, char *str)
 {
 	int		shift;
 	size_t	i;
-	size_t		len;
+	size_t	len;
 
 	len = ft_strlen(str);
 	i = 0;

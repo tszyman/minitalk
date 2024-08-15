@@ -6,13 +6,13 @@
 /*   By: tomek <tomek@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 22:15:58 by tomek             #+#    #+#             */
-/*   Updated: 2024/08/15 20:59:34 by tomek            ###   ########.fr       */
+/*   Updated: 2024/08/15 21:54:10 by tomek            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./Libft/libft.h"
 
-t_message	g_message = {0,0};
+t_message	g_message = {0, 0};
 
 void	bit_handler(int signal)
 {
@@ -32,7 +32,7 @@ void	bit_handler(int signal)
 void	setup_sig_handlers(void)
 {
 	struct sigaction	sa;
-	
+
 	sa.sa_handler = bit_handler;
 	sa.sa_flags = SA_RESTART;
 	if (sigaction(SIGUSR1, &sa, NULL) == -1)
@@ -45,13 +45,12 @@ void	setup_sig_handlers(void)
 		ft_printf("Error setting up SIGUSR2 handler");
 		exit(EXIT_FAILURE);
 	}
-	
 }
 
 int	main(void)
 {
 	pid_t	pid;
-	
+
 	pid = getpid();
 	ft_printf("Server's PID: %d\n", pid);
 	setup_sig_handlers();
